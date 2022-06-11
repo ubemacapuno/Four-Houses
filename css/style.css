@@ -1,0 +1,65 @@
+body {
+  background-color: coral;
+  background-image: url("hogwarts.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 700px;
+  background-color: hsla(0, 0%, 50%, 20%);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.container h2 {
+  margin: 30px 0px;
+}
+
+/* Pseudoelements */
+#studentName::before, #studentTrait::before, #studentAnimal::before, #studentFounder::before, #studentMotto::before  {
+  color: gainsboro;
+  text-shadow: 
+  1px 1px 3px navy, 
+  1px 1px 3px navy;
+}
+#studentName::before {
+  content: "House Name: "
+}
+
+#studentTrait::before {
+  content: "Trait: "
+}
+
+#studentAnimal::before {
+  content: "Animal: "
+}
+
+#studentFounder::before {
+  content: "Founder: "
+}
+
+#studentMotto::before {
+  content: "Motto: "
+}
+
+svg {
+  margin: 20px;
+  cursor: pointer;
+}
