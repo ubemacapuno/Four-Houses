@@ -1,6 +1,6 @@
 # Hogwarts - Four Houses: 
 
-This is my first project building and incorporating a server using Node.js. The server includes data for the four Hogwarts houses: Gryffindor, Ravenclaw, Hufflepuff, and Slytherin. If the user types in a house name and clicks the button, the API will respond back with corresponding data or an error if not found. The API will also respond with a random house and alert the user of the random house when the Sorting Hat image is clicked on.
+This is my first project building and incorporating a server using Node.js. The server includes data for the four Hogwarts houses: Gryffindor, Ravenclaw, Hufflepuff, and Slytherin. If the user types in a house name and clicks the button, the API will respond back with corresponding data or an error if not found. The API will also respond with a random house and the front-end will alert the user of the random house when the Sorting Hat image is clicked on.
 
 ## How It's Made:
 
