@@ -6,6 +6,8 @@ This is my first project incorporating a back-end using Node.js. The server incl
 
 **Tech used:** JavaScript/Node, HTML, CSS.
 
+ <img src="https://github.com/ubemacapuno/images-for-github-readme/blob/main/Four-Houses.gif?raw=true" width="100%"  alt="codewars repo gif."/>
+
 ## Optimizations
 
 The purpose of this project was to get a back-end working, and to get a couple of responses from the server. In the future, I would add more responsiveness and styling (ex: have the server provide images or have colors respond to different houses being chosen, etc.). Once I get a better grasp of Express, I can incorporate that wil this repo.
