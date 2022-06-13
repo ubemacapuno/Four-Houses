@@ -54,6 +54,7 @@ const server = http.createServer((req, res) => {
       res.end();
     });
   }
+  //API starts here:
   else if (page == '/api') {
     if('student' in params){
       if(params['student']== 'gryffindor'){
@@ -68,7 +69,7 @@ const server = http.createServer((req, res) => {
       }//student != leon
       else if(params['student']== 'hufflepuff'){
         res.writeHead(200, {'Content-Type': 'application/json'});
-        hufflepuff = new HogwartsHouse("Hufflepuff", "Loyal", "Badger", "Helga Hufflepuff", "\"Just and Loyal!\"")
+        const hufflepuff = new HogwartsHouse("Hufflepuff", "Loyal", "Badger", "Helga Hufflepuff", "\"Just and Loyal!\"")
         res.end(JSON.stringify(hufflepuff));
       }//student != leon
       else if(params['student']== 'slytherin'){
@@ -85,6 +86,28 @@ const server = http.createServer((req, res) => {
       }
       //student != leon
     }//student if
+  }//else if
+  //Randomization for API starts here:
+  else if (page == `/api2`) {
+    res.writeHead(200, {'Content-Type': 'application/json'});
+    let random = Math.ceil(Math.random() *4)
+    let randomHouse = ""
+    if (random == 1){
+      const gryffindor = new HogwartsHouse("Gryffindor", "Bravery", "Lion", "Godric Gryffindor", "\"Brave at Heart!\"")
+      randomHouse = gryffindor
+    }else if ( random == 2){
+      const ravenclaw = new HogwartsHouse("Ravenclaw", "Wise", "Eagle", "Rowena Ravenclaw", "\"Of Wit and Learning!\"")
+      randomHouse = ravenclaw
+    }else if ( random == 3){
+      const hufflepuff = new HogwartsHouse("Hufflepuff", "Loyal", "Badger", "Helga Hufflepuff", "\"Just and Loyal!\"")
+      randomHouse = hufflepuff
+    }else if (random == 4){
+      const slytherin = new HogwartsHouse("Slytherin", "Cunning", "Snake", "Salazar Slytherin", "\"By Any Means!\"")
+      randomHouse = slytherin
+    }else{
+      randomHouse = "Error with random calculation (server)!"
+    }
+    res.end(JSON.stringify(randomHouse));
   }//else if
   else if (page == '/css/style.css'){
     fs.readFile('css/style.css', function(err, data) {
