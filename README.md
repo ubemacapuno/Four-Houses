@@ -10,7 +10,7 @@ This is my first project building and incorporating a server using Node.js. The 
 
 ## Optimizations
 
-The purpose of this project was to get a back-end working, and to get a couple of responses from the server. In the future, I would add more responsiveness and styling (ex: have the server provide images or have colors respond to different houses being chosen, etc.). Once I get a better grasp of Express, I can incorporate that wil this repo.
+The purpose of this project was to get a back-end working, and to get a couple of responses from the server. In the future, I would add more responsiveness and styling (ex: have the server provide images or have colors respond to different houses being chosen, etc.). Once I get a better grasp of Express, I can incorporate that into this repo.
 
 ## Lessons Learned:
 
