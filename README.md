@@ -14,5 +14,4 @@ The purpose of this project was to get a back-end working, and to get a couple o
 
 ## Lessons Learned:
 
-Being able to build out simple API calls using async functions is not as hard as complicated as I thought it would be! I'm looking forward to learning more and going deeper into building APIs.
-
+Being able to build out simple API calls using async functions is not as hard as complicated as I thought it would be! Also, building this without Express and then learning about Express after this project, I learned how much extra code that Express helps to abstract away when building out a server. I'm looking forward to learning more and going deeper into building out servers and APIs. with Node.
